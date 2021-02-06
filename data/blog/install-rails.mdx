@@ -1,0 +1,116 @@
+---
+title: 'Como instalar Ruby on Rails no Ubuntu 20.04'
+publishedAt: '2021-02-04'
+summary: 'Instale o framework Ruby on Rails no Ubuntu'
+image: '/static/images/install-rails/rails.png'
+---
+
+<Image
+  alt={`Rails logo`}
+  src={`/static/images/install-rails/rails.png`}
+  width="411"
+  height="155"
+/>
+
+Primeiro, atualize o sistema
+
+```bash
+sudo apt-get update
+```
+
+After, install the build-essential package.
+
+```bash
+sudo apt-get install build-essential
+```
+
+And also curl.
+
+```bash
+sudo apt-get install curl
+```
+
+Then, we need install rvm but first install GPG Keys.
+
+```bash
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
+
+Install RVM. development version.
+
+```bash
+\curl -sSL https://get.rvm.io | bash -s stable
+```
+
+After installation run the following command to the rvm works.
+
+```bash
+source ~/.rvm/scripts/rvm
+```
+
+Also, for RVM to work properly, you have to check the *Run command as login shell in the terminal*.
+
+RVM commands:
+
+```bash
+rvm  # show all commands of rvm
+```
+
+Install ruby interpreter.
+
+```bash
+rvm install 2.7.1 # add the last version stable of ruby
+```
+
+Switch to specified ruby interpreter.
+
+```bash
+rvm use 2.7.1
+```
+
+Set a default version of ruby.
+
+```bash
+rvm use 2.7.1 --default
+```
+
+Check the version of ruby.
+
+```bash
+ruby -v
+```
+
+Install rails.
+
+```bash
+gem install rails
+```
+
+Install Node Version Manager to install Node.js
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+or
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+Running either of the above commands downloads a script and runs it. The script clones
+the nvm repository to ~/.nvm, and attempts to add the source lines from the snippet
+below to the correct profile file (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Install Node.js
+
+```bash
+nvm install --lts # install node.js lts version
+```
+
+Creating a New Rails Project
+
+```bash
+rails new app
+```
