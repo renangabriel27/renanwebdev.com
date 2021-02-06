@@ -17,8 +17,8 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: 'Renan Gabriel – Desenvolvedor web.',
-    description: `Web developer, Ruby on Rails & JavaScript fã.`,
-    image: 'https://renanwebdev.com/static/images/banner.png',
+    description: `Web developer, Ruby on Rails & JavaScript.`,
+    image: 'https://renanwebdev.com/static/images/banner.jpg',
     type: 'website',
     ...customMeta
   };
