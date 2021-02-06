@@ -125,10 +125,9 @@ export default function Timeline() {
       </h3>
       <Year>2020</Year>
       <ul>
-        <Step title="Entrei na neurologic 🤘🏻">
-          Fui chamado pelo antigo CTO da Neurologic o Bruno, para
-          realizar um teste e entrar na empresa. Gostei bastante da
-          empresa e acabei passando e sendo chamado.
+        <Step title="Entrei na Neurologic 🤘🏻">
+          Hoje estou bem empolgado trabalhando na Neurologic a primeira
+          plataforma de marketing conversacional do Brasil!
         </Step>
       </ul>
       <Divider />
