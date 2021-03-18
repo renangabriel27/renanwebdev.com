@@ -18,14 +18,11 @@ export default function Footer() {
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
           <Link href="/">
-            <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
+            <a className="text-gray-500 hover:text-gray-600 transition">home</a>
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://github.com/renangabriel27">GitHub</ExternalLink>
-        </div>
-        <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://github.com/leerob/leerob.io">Theme</ExternalLink>
+          <ExternalLink href="https://github.com/renangabriel27">github</ExternalLink>
         </div>
       </div>
     </footer>

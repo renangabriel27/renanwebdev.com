@@ -24,7 +24,7 @@ export default function Container(props) {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-white dark:bg-black">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -39,16 +39,16 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <nav className="flex justify-end items-center max-w-3xl p-8 my-0 md:my-8 mx-auto bg-white dark:bg-gray-900 bg-opacity-60">
+      <nav className="flex justify-end items-center max-w-3xl p-8 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
         <a href="#skip" className="sr-only focus:not-sr-only">
           Skip to content
         </a>
         <div>
           <NextLink href="/">
-            <a className="text-gray-900 dark:text-gray-100">Home</a>
+            <a className="text-gray-900 dark:text-gray-100">home</a>
           </NextLink>
           <NextLink href="/blog">
-            <a className="pl-6 text-gray-900 dark:text-gray-100">Blog</a>
+            <a className="pl-6 text-gray-900 dark:text-gray-100">info</a>
           </NextLink>
         </div>
         <button
@@ -86,7 +86,7 @@ export default function Container(props) {
       </nav>
       <main
         id="skip"
-        className="flex flex-col justify-center bg-white dark:bg-gray-900 px-8"
+        className="flex flex-col justify-center bg-white dark:bg-black px-8"
       >
         {children}
         <Footer />
