@@ -18,7 +18,7 @@ export default function Container(props) {
   const meta = {
     title: 'Renan Gabriel – Desenvolvedor web.',
     description: `Web developer, Ruby on Rails & JavaScript.`,
-    image: 'https://renanwebdev.com/static/images/banner.jpg',
+    image: 'https://renanwebdev.com/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
