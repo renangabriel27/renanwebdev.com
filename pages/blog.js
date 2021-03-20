@@ -16,8 +16,8 @@ export default function Home() {
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-2">
           Olá, eu sou o Renan Gabriel e trabalho como desenvolvedor web
           na <a href='https://www.leadster.com.br' target="_blank">Leadster</a>.
-          Além disso, sempre estou experimentando e testando
-          novas tecnologias e produzindo conteúdos sobre o que já aprendi.
+          Além disso, criei esse blog para postar sobre desenvolvimento web
+          e algumas coisas aleatórias.
         </h2>
       </div>
     </Container>

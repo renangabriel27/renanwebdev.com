@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
   return (
     <Container
       title="Blog – Renan Gabriel"
-      description="Blog sobre desenvolvimento web."
+      description="Blog sobre desenvolvimento web e coisas aleatórias."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <div className="relative w-full mb-4">
